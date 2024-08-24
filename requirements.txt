@@ -8,10 +8,10 @@ scipy
 requests
 setuptools
 PyPDF2
-langchain
 langchain_google_genai
 faiss-cpu
-pydantic
+pydantic==2.8.2
+langchain==0.0.123  # Replace with your working version
 google-auth
 google-generativeai  # For Google Generative AI integration
 transformers  # If you plan to use Hugging Face models
