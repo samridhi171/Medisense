@@ -8,6 +8,10 @@ scipy
 requests
 setuptools
 PyPDF2
+langchain
+langchain_google_genai
+faiss-cpu
+google-auth
 google-generativeai  # For Google Generative AI integration
 transformers  # If you plan to use Hugging Face models
 # Uncomment the following lines based on your framework choice
