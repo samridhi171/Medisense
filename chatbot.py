@@ -13,7 +13,7 @@ import os
 api_key = "AIzaSyArJVsC_iaUDJqOCUsRTa3QwYheNgoTTaI"
 
 # Set PDF file paths directly here and change it accordingly
-pdf_paths = [r"DIABETES.pdf"]
+pdf_paths = [r"Cancer.pdf"]
 
 # Set page configuration
 st.set_page_config(page_title="Medical Bot", layout="wide")
