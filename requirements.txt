@@ -20,3 +20,4 @@ transformers  # If you plan to use Hugging Face models
 # torch  # If you are using PyTorch
 openai  # For OpenAI API integration, if needed
 langchain-google-genai
+RecursiveCharacterTextSplitter
