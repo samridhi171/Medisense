@@ -11,7 +11,7 @@ PyPDF2
 langchain_google_genai
 faiss-cpu
 pydantic==1.10.11
-langchain== 0.0.149 #Replace with your working version
+langchain==0.0.149 #Replace with your working version
 google-auth
 google-generativeai  # For Google Generative AI integration
 transformers  # If you plan to use Hugging Face models
