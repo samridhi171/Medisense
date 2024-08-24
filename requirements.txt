@@ -21,4 +21,4 @@ transformers  # If you plan to use Hugging Face models
 openai  # For OpenAI API integration, if needed
 langchain-google-genai
 langchain-community
-langchain-core>=0.2.23
+langchain-core==0.2.23
