@@ -13,7 +13,7 @@ import os
 api_key = "api_key"
 
 # Set PDF file paths directly here and change it accordingly
-pdf_paths = [r"AntiraggingAffidavitForm.pdf"]
+pdf_paths = [r"DIABETES.pdf"]
 
 # Set page configuration
 st.set_page_config(page_title="Medical Bot", layout="wide")
