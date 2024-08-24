@@ -10,7 +10,7 @@ from langchain.prompts import PromptTemplate
 import os
 
 # Set the API key directly here and change this according to your API
-api_key = "api_key"
+api_key = "AIzaSyArJVsC_iaUDJqOCUsRTa3QwYheNgoTTaI"
 
 # Set PDF file paths directly here and change it accordingly
 pdf_paths = [r"DIABETES.pdf"]
