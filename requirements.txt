@@ -10,8 +10,8 @@ setuptools
 PyPDF2
 langchain_google_genai
 faiss-cpu
-pydantic
-langchain  # Replace with your working version
+pydantic==2.7.4
+langchain
 google-auth
 google-generativeai  # For Google Generative AI integration
 transformers  # If you plan to use Hugging Face models
@@ -19,3 +19,6 @@ transformers  # If you plan to use Hugging Face models
 # tensorflow  # If you are using TensorFlow
 # torch  # If you are using PyTorch
 openai  # For OpenAI API integration, if needed
+langchain-google-genai
+langchain-community
+langchain-core
