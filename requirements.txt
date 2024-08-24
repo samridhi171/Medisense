@@ -19,4 +19,4 @@ transformers  # If you plan to use Hugging Face models
 # tensorflow  # If you are using TensorFlow
 # torch  # If you are using PyTorch
 openai  # For OpenAI API integration, if needed
-langchain langchain-google-genai pydantic
+langchain-google-genai
