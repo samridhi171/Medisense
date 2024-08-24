@@ -10,7 +10,7 @@ setuptools
 PyPDF2
 langchain_google_genai
 faiss-cpu
-pydantic==1.10.2
+pydantic==2.7.4
 langchain
 google-auth
 google-generativeai  # For Google Generative AI integration
