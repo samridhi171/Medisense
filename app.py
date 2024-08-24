@@ -50,26 +50,43 @@ system_prompt = "Describe this image"
 # Design the frontend
 st.set_page_config(page_title="Chatbot", page_icon=":robot:")
 
+# Import the Roboto font and apply it
+font_css = """
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    html, body, [class*="css"]  {
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+"""
+st.markdown(font_css, unsafe_allow_html=True)
+
+
+# Display the Medisense logo in the top-left corner
+st.image("MediSenseLogo.png", width=80)
+
 # Set page title with custom font color
 st.markdown(
     f"""
-    <h1 style='text-align: left; color: #000A8E;'>Hey! I’m Doctor Kure. How can I help you today?</h1>
+    <h1 style='text-align: left; color: #000A8E;'>Hey! I’m Doctor Pulse. How can I help you today?</h1>
     """,
     unsafe_allow_html=True
 )
 
-# Set subtitle with custom font color
+# Set subtitle with custom font color, size, and weight
 st.markdown(
     f"""
-    <h3 style='text-align: left; color: #141FB7;'>An Application that can help users with medical recommendations and disease detection</h3>
+    <h3 style='text-align: left; color: black; font-size: 18px; font-weight: 400;'>An Application that can help users with medical recommendations and disease detection</h3>
     """,
     unsafe_allow_html=True
 )
+
+
 
 # Display the image above the file uploader
 image_path = "cute-doctor-robot-holding-clipboard-stethoscope-cartoon-vector-icon-illustration-science-techno (1).png"
 st.image(image_path, use_column_width=False, width=400)
-
 
 # Apply gradient background using custom CSS for main content
 page_bg_gradient = """
@@ -77,7 +94,6 @@ page_bg_gradient = """
     .stApp {
         background: linear-gradient(135deg, #FFFFFF, #CEE1F8);
     }
-    
 </style>
 """
 st.markdown(page_bg_gradient, unsafe_allow_html=True)
@@ -86,9 +102,9 @@ st.markdown(page_bg_gradient, unsafe_allow_html=True)
 button_css = """
 <style>
     .stButton>button {
-        background-color: #0661CC; /* blue background */
-        color: white; /* White text */
-        border: none; /* No border */
+        background-color: white; /* White background */
+        color: #0661CC; /* Blue text */
+        border: 2px solid #0661CC; /* Blue border */
         padding: 10px 20px; /* Some padding */
         text-align: center; /* Centered text */
         text-decoration: none; /* No underline */
@@ -99,13 +115,21 @@ button_css = """
         border-radius: 5px; /* Rounded corners */
     }
     .stButton>button:hover {
-        background-color: #000A8E; /* Darker blue on hover */
-        color: white; /* Ensure text color remains white on hover */
+        background-color: #0661CC; /* Blue background on hover */
+        color: white; /* White text on hover */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin-bottom: 20px;
+        color: #000A8E; /* Deep blue for headings and subheadings */
     }
 </style>
-
 """
 st.markdown(button_css, unsafe_allow_html=True)
+
 
 # Add custom CSS to style the file uploader box
 file_uploader_css = """
@@ -130,8 +154,6 @@ file_uploader_css = """
 st.markdown(file_uploader_css, unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader("Upload the medical image for analysis", type=["png", "jpg", "jpeg"])
-
-
 
 submit_button = st.button("Submit")
 
