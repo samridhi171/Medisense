@@ -11,6 +11,7 @@ PyPDF2
 langchain
 langchain_google_genai
 faiss-cpu
+pydantic
 google-auth
 google-generativeai  # For Google Generative AI integration
 transformers  # If you plan to use Hugging Face models
