@@ -1,12 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(e)
 {
     document.getElementById('button1').classList.add('animate-slideInSideBySide');
-    document.getElementById('section1').scrollIntoView({
-        behavior:'auto',
-        block:'start', 
-    });
-    document.getElementById('section1').style.marginTop = "100px";
-})
+    });;
 // for mobile_menu
 
 let vector = document.getElementById('vector');

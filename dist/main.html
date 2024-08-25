@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/12f607501b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>MediSense</title>
     <style>
@@ -77,7 +76,7 @@
     <nav class="navbar1 h-[68px] md:h-[106px]   md:p flex   items-center justify-between z-50">
         <div class=" p-2  mx-4 md:flex md:items-center 
          hover:cursor-pointer">
-        <a href="index.html"><img class="mt-2 md:mt-2 h-[65px] w-[100px] md:w-[150px] md:h-[100px]" src="./assets/Logo1.png" alt="Medisense/img"></a>
+        <a href="main.html"><img class="mt-2 md:mt-2 h-[65px] w-[100px] md:w-[150px] md:h-[100px]" src="./assets/Logo1.png" alt="Medisense/img"></a>
         </div>
         <div class="md:hidden m-2 p-2 cursor-pointer">
             <img id="vector" src="./assets/Vector.png" alt="">
@@ -85,8 +84,8 @@
         <!-- achor tags -->
         <div class="navbar md:grid md:place-content-center hidden md:text-blue-800  md:text-2xl ">
             <ul class="flex">
-                <a class="mx-10 hover:text-black" href="index.html">HOME</a>
-                <a id="feature" class="mx-10 flex items-center  hover:text-black" href="#section2">FEATURES<i class="fa-solid fa-lock ml-[10px]"></i></a>
+                <a class="mx-10 hover:text-black" href="main.html">HOME</a>
+                <a id="feature" class="mx-10  hover:text-black" href="#section2">FEATURES</a>
                 <a class="mx-10  hover:text-black" href="#section3">ABOUT US</a>
                 <!-- <a class="mx-10  hover:text-black" href="#">CREATORS</a> -->
             </ul>
@@ -99,7 +98,7 @@
         <div id="vector_tab" class="mt-5 hidden md:hidden  h-[204px] right-[-250px] transition-transform duration-1000">
             <ul>
                 <li class="mt-1 h-12 bg-blue-800 flex items-center justify-center text-white "><a href="#section1">Home</a></li>
-                <li class="mt-1 h-12 bg-blue-800 flex items-center justify-center text-white "><a href="#section2">Features<i class="fa-solid fa-lock ml-[10px]"></i></a></li>
+                <li class="mt-1 h-12 bg-blue-800 flex items-center justify-center text-white "><a href="#section2">Features</a></li>
                 <li class="mt-1 h-12 bg-blue-800 flex items-center justify-center text-white "><a href="#section3">About Us</a></li>
             </ul>
         </div>
@@ -113,15 +112,14 @@
         <div class=" p-5 text-center md:text-start md:grid md:place-content-center">
             <h1 class=" text-blue-900 text-3xl md:text-5xl  animate-slideInSideBySide">Revolutionizing<br></h1>
                <H1 class="mt-2 md:mt-4 text-blue-900 text-3xl md:text-5xl  animate-slideInSideBySide ">Healthcare Conversations</H1>
-                <p class=" mt-2 md:mt-8 text-blue-800 text-lg md:text-3xl animate-slideInSideBySide">Revolutionizing the way you experience <br>healthcare-efficient, 
+                <p class=" mt-2 md:mt-8 text-blue-800 text-lg md:text-3xl animate-slideInSideBySide">Transforming the way you experience <br>healthcare-efficient, 
                     reliable, and right when you need it.</p>
-                <p class=" mt-2 md:mt-8 text-blue-800 text-lg md:text-3xl animate-slideInSideBySide animate-translate-y-up-down2">Authenticate to Unlock all features</p>
                  <!-- Login Button -->
                   <div class="inline-block">
-                    <a  href="signup.html"><button id="button1" class=" mt-8 md:mt-10 text-xl bg-gradient-to-r from-blue-300 to-blue-800
+                    <a  href="#footer"><button id="button1" class=" mt-8 md:mt-10 text-xl bg-gradient-to-r from-blue-300 to-blue-800
                             transform transition-transform hover:translate-y-[-10px] shadow-sm hover:shadow-2xl
                             p-5 rounded-xl text-black  hover:shadow-gray-300 h-auto w-44
-                    ">LOGIN/SIGN UP</button></a>
+                    ">Connect With Us</button></a>
                 </div>
         </div>
         <!-- Text Content End -->
@@ -133,10 +131,10 @@
 </section>
 
 <!-- Features -->
-<section id="section2" class="md:h-[100vh] hidden md:place-content-center">
+<section id="section2" class="md:h-[100vh] md:grid md:mt-10">
 
-       <div class=" md:mt-28   flex flex-col md:p-16 ">
-       <div class="flex flex-wrap justify-around mt-5 gap-8 md:gap-10">
+       <div class=" md:mt-28   flex flex-col md:p-0 ">
+       <div class="flex flex-wrap justify-around mt-5 gap-8 md:gap-2">
         <!-- IMAGE DIAGNOSE BOX -->
         <a id ="image_ diagnose" href="https://pictureuploadpy-fcuyyb8anjron4exvjmfzp.streamlit.app/"><div class=" h-[520px] w-[280px] md:h-[450px] md:w-[307px]  bg-gradient-to-r from-[#59C0E9] to-[#2A5298] 
             shadow-lg transform transition-transform hover:translate-y-[-12px] hover:shadow-2xl hover:shadow-black
@@ -156,15 +154,15 @@
         flex flex-col items-center justify-center p-4 rounded-xl text-center">
         <!-- img -->
             <div class="">
-                <img src="./assets/VoiceAssistant.png" alt="">
+                <img class="h-[200px]" src="./assets/signdetect.png" alt="">
             </div>
             <!-- text -->
-            <h2 class="mt-4 text-2xl  text-white">VOICE ASSISTANT</h2>
-                <p class=" text-lg  text-white mt-2">Speak your symptoms, and let our AI voice assistant 
-                    guide you to potential diagnoses and treatment options.</p>
+            <h2 class="mt-4 text-2xl  text-white">SIGN LANGUAGE DETECTION</h2>
+                <p class=" text-lg  text-white mt-2">Sign Language Detection turns gestures into text,
+                     making communication easier and healthcare more accessible</p>
         </div></a>
         <!-- AI CHATBOT BOX -->
-        <a id ="anchor3" href="https://chatbotpy-ffvg4ngfaedrzipndltsyd.streamlit.app/"><div class="h-[520px] w-[280px] md:h-[450px] md:w-[307px]  bg-gradient-to-r from-[#59C0E9] to-[#2A5298] 
+        <a id ="anchor3" href="https://chatbotpy-afpkmjtzqsajaeajksgt96.streamlit.app/"><div class="h-[520px] w-[280px] md:h-[450px] md:w-[307px]  bg-gradient-to-r from-[#59C0E9] to-[#2A5298] 
             shadow-lg transform transition-transform hover:translate-y-[-12px] hover:shadow-2xl hover:shadow-black
         flex flex-col items-center justify-center p-4 rounded-xl text-center">
     <!-- img -->
@@ -187,44 +185,41 @@
       <!-- Features end -->
 
      <!--About Us  -->
-     <section id="section3" class="md:h-[100vh] hidden md:place-content-center mt-24 md:mt-0">
-        <div class="w-full md:flex md:justify-around md:p-20 mt-10 hidden">
+     <section id="section3" class="md:h-[100vh] md:grid md:place-content-center mt-24 md:mt-0">
+        <div class="w-full md:flex md:justify-between md:p-10 mt-10 ">
             <div class="flex flex-col md:w-[515px] md:h-[437px]">
                 <h1 class=" text-blue-800  text-3xl text-center md:text-start md:text-3xl">Medisense: AI-Powered Healthcare Assistant</h1>
-                <p class="mt-2 md:mt-8 text-blue-700 text-xl md:text-2xl p-4 md:p-0">Medisense is an advanced healthcare platform that utilizes AI to
-                     help users diagnose diseases and recommend personalized treatments based on their medical data. With an AI chatbot, users can receive
-                      instant answers to their medical queries and personalized support. The platform also allows for the upload of medical images for detailed
-                       diagnostic analysis, providing accurate insights into health conditions. Additionally, the voice assistant feature enables users to describe
-                        their symptoms verbally, receiving immediate tailored recommendations. Medisense is committed 
-                    to empowering users with reliable information and compassionate support throughout their healthcare journey.</p>
+                <p class="mt-2 md:mt-6 text-blue-700 text-xl md:text-2xl p-4 md:p-0">"In the journey of health, knowledge is the best prescription."<br>
+                    Medisense is an advanced healthcare platform that utilizes AI to help users diagnose diseases and recommend personalized treatments 
+                    based on their medical data. The platform allows users to upload medical images for detailed diagnostic analysis, providing accurate
+                     insights into health conditions. It also includes sign language detection, ensuring that communication barriers are removed and healthcare
+                      is accessible to everyone. Besides, with an AI chatbot, users can receive instant answers to their medical queries and personalized support.
+                     Medisense is committed to empowering users with reliable information and compassionate support throughout their healthcare journey.</p>
             </div>
-            <div>
-                <img src="./assets/DoctoVerse.png" alt="">
+            <div class="mx-20">
+                <img class="md:h-[450px] md:w-[450px]" src="./assets/DoctoVerse.png" alt="">
             </div>
         </div>
      </section>
     </main>
     <!-- FOOTER -->
-    <footer class="mt-28">
+    <footer id="footer" class="mt-28">
         <div class="h-[304px] bg-[#2C5484] flex md:justify-between">
             <div class="md:m-8  p-4 md:p-10 grid place-content-center">
                 <img class="h-16 w-24 md:h-28 md:w-44" src="./assets/Logo2.png" alt="">
                 <h1 class=" mt-4 md:text-lg text-sm text-white">MediSense&copy;2024-All Rights Reserved</h1>
             </div>
             <div class="grid place-content-center md:p-20">
-                <ul class="flex  text-white text-sm  md:text-3xl ">
+                <ul class="flex  text-white text-sm  md:text-xl ">
                     <li class=" mx-2 md:mx-10"><a href="privacy.html">PRIVACY POLICY</a></li>
                     <li class=" mx-2 md:mx-10"><a href="support.html">SUPPORT</a></li>
                     <li class="mx-2 md:mx-10"><a href="tac.html">TERMS AND CONDITIONS</a></li>
                 </ul>
-                <ul class=" flex items-center mt-12 md:ml-5">
+                <ul class=" flex items-center justify-center mt-12 md:ml-5">
                     <a href="https://www.instagram.com/medi.sense?igsh=ejNtZHkxYjk2bjFo" class="h-9 w-9 mx-2 md:mx-6"><img src="./assets/Instagram.png" alt=""></a>
                     <a href="medisense240824@gmail.com" class="h-9 w-9 mx-2 md:mx-6"><img src="./assets/Mail.png" alt=""></a>
                     <a href="https://x.com/medisense_?t=eaU2w-s84JKWDixx4pC0PQ&s=08" class="h-9 w-9 mx-2 md:mx-6"><img src="./assets/Twitter.png" alt=""></a>
-                    <h1 class="text-white text-base md:text-2xl md:mx-36">Register for free<span class="mx-1"><a href="signup.html"><button class="h-[30px] w-[68px] md:h-[55px] md:w-[150px] rounded-3xl bg-gradient-to-r from-gray-300 to-blue-400 transform
-                         transition-transform hover:-translate-y-1 hover:shadow-gray-400 shadow-md">SIGN UP!!</button></a></span></h1>
                 </ul>
-
             </div>
             
         </div>

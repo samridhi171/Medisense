@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./assets/icon.png">
     <title>Login/SignUp</title>
+    <script type="module" src="signup.js" defer></script>
+    <script type="module" src="gglsignup.js" defer></script>
     <style>
         * {
             margin: 0;
@@ -21,7 +23,7 @@
         }
         input
         {
-            background:rgb(224, 223, 223);
+            background:rgb(193, 191, 191);
             margin-top: 15px;
             border-radius: 15px;
             height: 7vh;
@@ -47,28 +49,28 @@
     </style>
 </head>
 <body class="h-screen bg-[url(./assets/Android_small.png)] md:bg-[url(./assets/SignUpPage.png)] bg-cover">
-<div>
+<div class="md:flex">
     <div class="md:p-4 p-4">
-        <img class=" h-[70px] w-[110px] md:w-[150px] md:h-[110px]"  src="./assets/Logo1.png" alt="">
+        <a href="index.html"><img class=" h-[70px] w-[110px] md:w-[150px] md:h-[110px] cursor-pointer"  src="./assets/Logo1.png" alt=""></a>
     </div>
-    <div class=" mt-2 md:mt-0 md:p-5 md:ml-20">
-        <h1 class="ml-4 md:text-5xl text-3xl  text-blue-800">Create Your Account</h1>
-        <div class="md:w-96 p-3 md:p-0">
+    <div class=" mt-2 md:mt-36 md:p-5 ">
+        <h1 class="ml-4 flex justify-start md:text-5xl text-3xl  text-blue-800">Create Your Account</h1>
+        <div class="md:w-96 p-3 md:p-0 md:ml-16">
             <form action="" class="flex flex-col items-center md:mt-7">
                 <input type="text" name="Name" placeholder="Full Name" required>
-                <input type="email" name="Email" placeholder="Email" required>
-                <input type="password" name="Password" placeholder="Password" required>
-                <input type="password" name="Confirm_password" placeholder="Confirm Password" required>
+                <input type="email" name="Email" placeholder="Email" id="email" required>
+                <input type="password" name="Password" placeholder="Password" id="password" required>
+                <input type="password" name="Confirm_password" placeholder="Confirm Password" id="confirmPassword" required>
                 <button class=" bg-gradient-to-r from-blue-800 to-blue-300 h-12 w-full rounded-3xl mt-4 md:w-[35vw]
-                text-white  text-xl hover:shadow-md hover:shadow-gray-400" type="submit">Create Account</button>
+                text-white  text-xl hover:shadow-md hover:shadow-gray-400" type="submit" id="submit">Create Account</button>
             </form>
         </div>
-        <div class="md:w-[26vw] h-auto text-center">
+        <div class="md:w-[26vw] h-auto text-center md:ml-14">
             <h1 class="  md:mt-5  text-lg md:text-xl">OR</h1>
-            <a class=" mt-2 flex gap-3 justify-center  text-lg md:text-xl" href="#"><img src="./assets/Group.png" alt="">Sign Up With Google</a>
+            <a class=" mt-2 flex gap-3 justify-center  text-lg md:text-xl " href="#" id="gglsignup"><img src="./assets/Group.png" alt="">Sign Up With Google</a>
         </div>
-        <div class="md:w-[26vw] h-auto text-center mt-2 md:mt-5">
-            <h1 class="text-gray-400  text-lg md:text-xl">Already have an account ?<span class="text-blue-800 font-bold "><a href="#">Login</a></span></h1>
+        <div class="md:w-[26vw] h-auto text-center mt-2 md:mt-5 md:ml-16">
+            <h1 class="text-gray-400  text-lg md:text-xl">Already have an account ?<span class="text-blue-800 font-bold "><a href="login.html">Login</a></span></h1>
         </div>
         <div>
 

@@ -1,0 +1,6 @@
+streamlit
+opencv-python==4.5.5.62
+mediapipe
+numpy
+scikit-learn
+statistics # This may not be needed as it is part of the Python Standard Library
