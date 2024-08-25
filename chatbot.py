@@ -12,8 +12,30 @@ import os
 # Set the API key directly here and change this according to your API
 api_key = "AIzaSyArJVsC_iaUDJqOCUsRTa3QwYheNgoTTaI"
 
+from PyPDF2 import PdfReader, PdfWriter
+
+def extract_pages(input_pdf_path, output_pdf_path, start_page, end_page):
+    reader = PdfReader(input_pdf_path)
+    writer = PdfWriter()
+
+    # Adjusting for 0-based indexing
+    for i in range(start_page - 1, end_page):
+        writer.add_page(reader.pages[i])
+
+    with open(output_pdf_path, 'wb') as output_pdf:
+        writer.write(output_pdf)
+
+# Example usage
+input_pdf_path = "Harrison's Principles of Internal Medicine, 20th Edition 2020.pdf"
+pdf_paths = "Harrison's_Extracted_Pages.pdf"
+start_page = 100  # Start from the first page
+end_page = 700  # Extract up to the 500th page
+
+extract_pages(input_pdf_path, pdf_paths, start_page, end_page)
+
+
 # Set PDF file paths directly here and change it accordingly
-pdf_paths = [r"DIABETES.pdf"]
+pdf_paths = [r"Harrison's_Extracted_Pages.pdf"]
 
 # Set page configuration
 st.set_page_config(page_title="Medical Bot", layout="wide")
