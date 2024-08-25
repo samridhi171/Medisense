@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/icon.png">
+    <title>Login</title>
+    <script type="module" src="signin.js"></script>
+    <script type="module" src="gglsignin.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+        body
+        {
+            font-family: "Jockey One", sans-serif;
+        }
+    </style>
+</head>
+<body class="h-screen bg-[url(./assets/Android_small.png)] md:bg-[url(./assets/SignUpPage.png)] bg-cover">
+<div class="md:flex">
+    <div class="md:p-4 p-4">
+        <a href="index.html"><img class=" h-[70px] w-[110px] md:w-[150px] md:h-[110px] cursor-pointer"  src="./assets/Logo1.png" alt=""></a>
+    </div>
+    <div class=" md:mt-40 mt-10 ml-10 grid place-content-center md:p-5  md:w-96">
+        <h1 class="ml-5 md:text-6xl text-4xl inline-block text-blue-800">LOGIN</h1>
+        <div class="md:w-96 p-3 md:p-0 md:ml-20">
+            <form action="" class="flex flex-col items-center md:mt-2 ">
+                <input class="mt-5  rounded-3xl h-[9vh] w-80 md:w-[35vw] p-5 text-lg font-semibold bg-gray-200" type="email" name="Email" placeholder="Email" id="email" required>
+                <input class="mt-5 md:mt-8 rounded-3xl h-[9vh] w-80 md:w-[35vw] p-5 text-lg font-semibold bg-gray-200" type="password" name="Password" placeholder="Password" id="password" required>
+                <button class=" bg-gradient-to-r from-blue-800 to-blue-300 md:h-[9vh] h-[9vh] w-full rounded-3xl md:mt-8 mt-5 md:w-[35vw]
+                text-white  text-2xl hover:shadow-md hover:shadow-gray-400" type="submit" id="submit">Login</button>
+            </form>
+        </div>
+        <div class="md:w-[26vw] h-auto text-center md:ml-14">
+            <h1 class="  md:mt-5  text-2xl md:text-xl">OR</h1>
+            <a class=" mt-2 flex gap-3 justify-center  text-2xl md:text-2xl" href="#" id="gglsignin"><img src="./assets/Group.png" alt="">Login With Google</a>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
