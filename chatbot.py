@@ -35,11 +35,7 @@ extract_pages(input_pdf_path, pdf_paths, start_page, end_page)
 
 
 # Set PDF file paths directly here and change it accordingly
-<<<<<<< HEAD
 pdf_paths = [r"Harrison's_Extracted_Pages.pdf"]
-=======
-pdf_paths = [r"Cancer.pdf"]
->>>>>>> 7689d1a8bfcb35bff39e19bcf48583be7759b311
 
 # Set page configuration
 st.set_page_config(page_title="Medical Bot", layout="wide")
